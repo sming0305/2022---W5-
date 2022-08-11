@@ -1,0 +1,84 @@
+.mainBlock {
+    width: 64%;
+
+    .mainBlock__link {
+        &:hover {
+            @include linkHover
+        }
+
+        &:focus {
+            @include linkFocus
+        }
+    }
+
+    .mainBlock__img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: $space*4;
+    }
+
+    .mainBlock__highLight{
+        color: $green;
+        font-family: 'Roboto Mono', monospace;
+        line-height: 1.5;
+        background: $gary-100;
+    } 
+
+    .mainBlock__file{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        background-color: $gary-100;
+        padding: 8px 12px;
+        border: 1px solid $gary-400;
+
+        &:hover {
+            @include linkHover
+        }
+
+        &:focus {
+            @include linkFocus
+        }
+    }
+
+    .mainBlock__menu__switch{
+        &:hover {
+            @include linkHover
+        }
+        &:active {
+            @include linkActive 
+        }
+    }
+
+
+
+
+
+    .mainBlock__menu__edit-light{
+        padding: 8px 32px;
+        border: 1px solid $green;
+        color: $green;
+        margin-right: $space*8;
+        font-weight: bold;
+        border-radius: 2px;
+
+        &:active {
+            @include linkActive 
+        }
+    }
+
+    .mainBlock__menu__edit-dark{
+        padding: 8px 32px;
+        border: 1px solid $green;
+        background: $green;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 2px;
+
+        &:active {
+            @include linkActive 
+        }
+    }
+}

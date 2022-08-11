@@ -1,0 +1,19 @@
+@import "variable";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import "base";
+@import "mixin";
+@import "util";
+@import "module";
+
+
+// layout
+@import "./layout/layout.scss";
+@import "./layout/aside";
+@import "./layout/headerMenu";
+@import "./layout/mainAside";
+@import "./layout/mainBlock";
+
+
+// pages
+@import "./pages/Assignment";
+@import "./pages/mainList";

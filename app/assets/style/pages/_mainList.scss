@@ -1,0 +1,180 @@
+.headerMenu__addNew{
+    max-height: 760px !important;
+    width: 480px;
+    margin: 0 auto;
+    padding: 32px 32px 16px;
+
+    .headerMenu__addNew__select{
+        padding: 16px;
+        color: $gary-600;
+        outline: none;
+    }
+
+}
+
+
+
+.mainList {
+    padding: 16px 32px 32px;
+
+    span {
+        vertical-align: bottom;
+    }
+
+    table a {
+
+        &:hover {
+            @include linkHover
+        }
+
+        &:focus {
+            @include linkFocus
+        }
+    }
+
+    thead {
+        border-bottom: 1px solid $gary-900;
+    }
+
+    th {
+        padding: 0 58px 4px 0;
+    }
+
+    td {
+        padding: 19px 0 17px;
+        border-bottom: 1px solid $gary-400;
+    }
+
+}
+
+
+.mainList__view {
+
+    width: 480px;
+    margin: 0 auto;
+
+    .mainList__view__img {
+        width: 141px;
+        height: 141px;
+        object-fit: cover;
+        margin-right: $space*12;
+    }
+
+    .mainList__view__openButton {
+        color: $green;
+    }
+
+    .mainList__view__edit {
+        border: none;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    
+    .mainList__view__edit__deactivateButton {
+        padding: 6px 27px;
+        color: $danger;
+        border: 1px solid $danger;
+        border-radius: 2px;
+        background-color: #fff;
+        font-weight: bold;
+        &:hover{
+            color: lighten($danger,10%);
+        }
+        &:active{
+            color: darken($danger,10%);
+        }
+    }
+
+    .mainList__view__edit__editButton {
+        padding: 6px 27px;
+        color: #fff;
+        border: 1px solid $green;
+        border-radius: 2px;
+        background-color: $green;
+        font-weight: bold;
+        &:hover{
+            background-color: lighten($green,10%);
+        }
+        &:active{
+            background-color: darken($green,10%);
+        }
+    }
+}
+
+
+// mainList__view__edit ----- for open use   
+.open .mainList__view__edit  {
+    height: auto;
+    margin-top: 32px;
+}
+
+
+// scrollable-type
+.scrollable-invisible-style {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+// checkbox-style
+.checkbox-style {
+    width: 16px;
+    height: 16px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border: 2px solid $gary-900;
+        border-radius: 3px;
+    }
+}
+
+// placeholder
+.placeholder-style {
+    &::placeholder {
+        font-size: $size*8;
+        color: $gary-900;
+    }
+}
+
+
+
+
+
+
+
+// mainMiniMenu
+.mainMiniMenu__link__switch {
+    color: $green;
+    border: 1px solid $green;
+    padding: 4px 3px;
+    line-height: 1;
+    margin-right: -1px;
+
+    &:hover {
+        background-color: $green;
+    }
+
+    &:focus {
+        background-color: $green;
+        color: #ffffff;
+    }
+}
+
+.mainMiniMenu__link__page {
+    padding: 4px 11.5px;
+    margin-right: -1px;
+    border: 1px solid $green;
+
+    &:hover {
+        background-color: $green;
+    }
+
+    &:focus {
+        background-color: $green;
+        color: #ffffff;
+    }
+}

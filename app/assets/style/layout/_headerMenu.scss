@@ -1,0 +1,21 @@
+.headerMenu__title {
+    font-size: 24px;
+    line-height: 1.375;
+    font-weight: bold;
+}
+
+.headerMenu__select {
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.headerSubMenu__link {
+    &:hover {
+        @include linkHover
+    }
+
+    &:focus {
+        @include linkFocus
+    }
+}

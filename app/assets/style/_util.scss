@@ -1,0 +1,201 @@
+// background
+
+.bg-color-100 {
+    background-color: $background-color-100;
+}
+
+.bg-color-white {
+    background-color: #ffffff;
+}
+
+.bg-color-danger {
+    background-color: $red;
+}
+
+
+// flex Centered
+.twoItemLevelCenter {
+    @include twoItemLevelCenter;
+}
+
+
+
+// padding 
+
+.p-12 {
+    padding: $space*6;
+}
+
+.p-4_5 {
+    padding: 2rem;
+}
+
+.pb-24 {
+    padding-bottom: $space*12;
+}
+
+
+.pt-24 {
+    padding-top: $space*12;
+}
+
+.px-4_5 {
+    padding: 0 2rem;
+}
+
+.pyx-1-9 {
+    padding: 1px 9px;
+}
+
+.pyx-16-0 {
+    padding: 16px 0px;
+}
+
+.pyx-9-16 {
+    padding: 9px 16px;
+}
+
+.pyx-8-12 {
+    padding: 8px 12px;
+}
+
+.pyx-12-16 {
+    padding: 12px 16px;
+}
+
+.pyx-17-32-0-16 {
+    padding: 17px 32px 0px 16px;
+}
+
+
+
+
+
+// margin
+.m0-a {
+    margin: 0 auto;
+}
+
+.me-9 {
+    margin-right: 9px;
+}
+
+.me-12 {
+    margin-right: $space*6;
+}
+
+.me-24 {
+    margin-right: $space*12;
+}
+
+.me-30 {
+    margin-right: $space*15;
+}
+
+.me-77 {
+    margin-right: 77px;
+}
+
+
+
+.mb-12 {
+    margin-bottom: $space*6;
+}
+
+.mb-18 {
+    margin-bottom: $space*9;
+}
+
+.mb-24 {
+    margin-bottom: $space*12;
+}
+
+.mb-29 {
+    margin-bottom: 29px;
+}
+
+.mb-4_5 {
+    margin-bottom: 2rem;
+}
+
+.mb-63 {
+    margin-bottom: 53px;
+}
+
+
+.myx-0-0-17-48 {
+    margin: 0 0 17px 48px;
+}
+
+
+
+// text
+.font-size-12 {
+    font-size: $size*6;
+}
+
+.font-size-14 {
+    font-size: $size*7;
+}
+
+.font-size-20 {
+    font-size: $size*10;
+}
+
+.font-size-24 {
+    font-size: $size*12;
+}
+
+.text-color-green {
+    color: $green;
+}
+
+.text-color-danger {
+    color: $danger;
+}
+
+.text-color-gray-400 {
+    color: $gary-400;
+}
+
+.text-color-gray-600 {
+    color: $gary-600;
+}
+
+
+
+// border
+
+.border-none {
+    border: none;
+}
+
+.border-danger {
+    border: 1px solid $red;
+}
+
+.border-gary-400 {
+    border: 1px solid $gary-400;
+}
+
+.border-gary-900 {
+    border: 1px solid $gary-900;
+}
+
+
+.border-b-gary-400 {
+    border-bottom: 1px solid $gary-400;
+}
+
+.border-t-gary-400 {
+    border-top: 1px solid $gary-400;
+}
+
+.border-radius-2 {
+    border-radius: 2px;
+}
+
+
+
+
+
