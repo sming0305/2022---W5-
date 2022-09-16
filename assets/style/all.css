@@ -198,50 +198,32 @@ a:hover {
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 200, 'opsz' 24; }
 
-.page__werpper {
-  max-width: 1280px;
+.container {
+  max-width: 950px;
   margin: 0 auto; }
 
-.main {
-  width: 77.6%; }
+.logo {
+  background-image: url("../images/logo-ANSWER.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  width: 143px;
+  height: 40px; }
 
-.mainSection {
-  padding: 0px 32px 32px; }
-
-.page__werpper__aisde {
-  width: 23.15%; }
-  .page__werpper__aisde .asideNav__title {
-    background-image: url("../images/logo-ANSWER.svg");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: block;
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
-    width: 143px;
-    height: 40px; }
-  .page__werpper__aisde .asideNav__list__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: bold;
-    padding: 4px 4px 4px 28px;
-    margin-left: -30px;
-    border-left: 4px solid transparent; }
-    .page__werpper__aisde .asideNav__list__item:hover {
-      border-left: 4px solid #198754;
-      color: #198754; }
-    .page__werpper__aisde .asideNav__list__item:focus {
-      border-left: 4px solid #198754;
-      color: #115c39; }
-
-.page__werpper__aisde .asideNav .light {
-  border-left: 4px solid #198754;
-  color: #115c39; }
+.Nav__list__item {
+  margin-left: -30px;
+  border-left: 4px solid transparent;
+  padding-left: 32px; }
+  .Nav__list__item:hover {
+    border-left: 4px solid #198754;
+    color: #198754; }
+  .Nav__list__item.active {
+    border-left: 4px solid #198754;
+    color: #198754; }
 
 .asideInfo__img {
   width: 40px;
