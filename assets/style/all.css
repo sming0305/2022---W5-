@@ -22,7 +22,7 @@ a:hover {
   color: inherit; }
 
 .bg-color-100 {
-  background-color: #F8F9FA; }
+  background-color: #F8F9FA !important; }
 
 .bg-color-white {
   background-color: #ffffff; }
@@ -43,6 +43,9 @@ a:hover {
 
 .p-4_5 {
   padding: 2rem; }
+
+.pe-4_5 {
+  padding-right: 2rem; }
 
 .pb-24 {
   padding-bottom: 24px; }
@@ -96,7 +99,7 @@ a:hover {
   margin-bottom: 18px; }
 
 .mb-24 {
-  margin-bottom: 24px; }
+  margin-bottom: 24px !important; }
 
 .mb-29 {
   margin-bottom: 29px; }
@@ -134,11 +137,17 @@ a:hover {
 .text-color-gray-600 {
   color: #6C757D; }
 
+.lh-24_33 {
+  line-height: 1.375; }
+
 .border-none {
   border: none; }
 
 .border-danger {
   border: 1px solid #DC3545; }
+
+.border-color-grey-400 {
+  border-color: #CED4DA; }
 
 .border-gary-400 {
   border: 1px solid #CED4DA; }
@@ -232,15 +241,8 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover; }
 
-.headerMenu__title {
-  font-size: 24px;
-  line-height: 1.375;
-  font-weight: bold; }
-
-.headerMenu__select {
-  border: none;
-  outline: none;
-  font-weight: bold; }
+.headerMenu__select::after {
+  display: none; }
 
 .headerSubMenu__link:hover {
   color: #198754; }
@@ -249,21 +251,12 @@ a:hover {
   color: #115c39; }
 
 .maniAside__select {
-  border: none;
-  outline: none;
-  font-weight: bold;
-  margin-bottom: 4px; }
+  margin-bottom: 0.375rem; }
+  .maniAside__select::after {
+    display: none; }
 
 .maniAside {
   width: 35.2%; }
-  .maniAside .maniAside__link {
-    border: 1px solid #CED4DA;
-    margin-bottom: -1px; }
-    .maniAside .maniAside__link:hover {
-      background-color: #F8F9FA; }
-    .maniAside .maniAside__link:focus {
-      color: #115c39;
-      background-color: #F8F9FA; }
 
 .mainBlock {
   width: 64%; }
@@ -377,11 +370,8 @@ a:hover {
   .mainBlock__reply__button__dark:active {
     color: #0d462c; }
 
-.reply {
-  display: none; }
-
 .change .reply {
-  display: block; }
+  display: block !important; }
 
 .change .answer {
   display: none; }
@@ -498,7 +488,8 @@ a:hover {
   line-height: 1;
   margin-right: -1px; }
   .mainMiniMenu__link__switch:hover {
-    background-color: #198754; }
+    background-color: #198754;
+    color: #000; }
   .mainMiniMenu__link__switch:focus {
     background-color: #198754;
     color: #ffffff; }
