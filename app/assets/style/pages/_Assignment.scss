@@ -1,50 +1,30 @@
-.headerMenu__title {
-    font-size: 24px;
-    line-height: 1.375;
-    font-weight: bold;
-}
 
 .headerMenu__select {
-    border: none;
-    outline: none;
-    font-weight: bold;
+    &::after{
+        display: none;
+    }
 }
 
 .headerSubMenu__link {
     &:hover {
-        @include linkHover
+        color: $green;
     }
 
     &:focus {
-        @include linkFocus
+        color: darken($green, 10%);
     }
 }
 
 
-
 .maniAside__select {
-    border: none;
-    outline: none;
-    font-weight: bold;
-    margin-bottom: $space*2;
+    margin-bottom: 0.375rem;
+    &::after{
+        display: none;
+    }
 }
 
 .maniAside {
     width: 35.2%;
-
-    .maniAside__link {
-        border: 1px solid $gary-400;
-        margin-bottom: -1px;
-
-        &:hover {
-            background-color: $background-color-100;
-        }
-
-        &:focus {
-            @include linkFocus;
-            background-color: $background-color-100;
-        }
-    }
 }
 
 
@@ -54,11 +34,11 @@
 
     .mainBlock__link {
         &:hover {
-            @include linkHover
+            color: $green;
         }
 
         &:focus {
-            @include linkFocus
+            color: darken($green, 10%);
         }
     }
 
@@ -86,20 +66,20 @@
         border: 1px solid $gary-400;
 
         &:hover {
-            @include linkHover
+            color: $green;
         }
 
         &:focus {
-            @include linkFocus
+            color: darken($green, 10%);
         }
     }
 
     .mainBlock__menu__switch{
         &:hover {
-            @include linkHover
+            color: $green;
         }
         &:active {
-            @include linkActive 
+            color: darken($green, 15%); 
         }
     }
 
@@ -116,7 +96,7 @@
         border-radius: 2px;
 
         &:active {
-            @include linkActive 
+            color: darken($green, 15%);
         }
     }
 
@@ -129,7 +109,7 @@
         border-radius: 2px;
 
         &:active {
-            @include linkActive 
+            color: darken($green, 15%);
         }
     }
 }
@@ -149,11 +129,11 @@
         margin-right: $space*15;
         padding-top: $space*2;
         &:hover {
-            @include linkHover
+            color: $green;
         }
 
         &:focus {
-            @include linkFocus
+            color: darken($green, 10%);
         }
     }
 }
@@ -184,7 +164,7 @@
     border-radius: 2px;
 
     &:active {
-        @include linkActive 
+        color: darken($green, 15%); 
     }
 }
 
@@ -197,16 +177,13 @@
     border-radius: 2px;
 
     &:active {
-        @include linkActive 
+        color: darken($green, 15%);
     }
 }
 
-.reply{
-    display: none;
-}
 
 .change .reply{
-    display: block;
+    display: block !important;
 }
 
 .change .answer{

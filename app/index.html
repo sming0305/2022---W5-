@@ -8,14 +8,31 @@ current: index
 <header>
     <div class="container">
         <section class="d-flex justify-content-between align-items-center p-4_5 px-0">
-            <div class="headerMenu d-flex">
-                <h2 class="headerMenu__title me-5">Assignment</h2>
-                <select name="courses" id="" class="headerMenu__select">
+            <div class="headerMenu d-flex align-items-center">
+                <h2 class="lh-24_33 fw-bold font-size-24 me-5">Assignment</h2>
+                <!-- <select name="courses" id="" class="headerMenu__select">
                     <option value="All Courses" name="courses">All Courses</option>
                     <option value="HTML&CSS" name="courses">HTML&CSS</option>
                     <option value="RWD" name="courses">RWD</option>
                     <option value="JavaScript" name="courses">JavaScript</option>
-                </select>
+                </select> -->
+
+                <!-- 「All Courses」、「All(4)」可以嘗試使用下拉選單製作 -->
+                <!-- 使用下拉選單進行製作了話，如果遇到需要客製化的下拉選單，感覺會相當的方便 -->
+                <div class="dropdown">
+                    <a class=" dropdown-toggle fw-bold headerMenu__select d-flex align-items-center" href="#"
+                        role="button" id="headerMenu__select" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Courses<span class="material-symbols-outlined ms-2 text-color-green">
+                            expand_more
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="headerMenu__select">
+                        <li><a class="dropdown-item" href="#">All Courses</a></li>
+                        <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
+                        <li><a class="dropdown-item" href="#">RWD</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="headerSubMenu d-flex">
                 <a href="#" class="me-4 headerSubMenu__link"><span class="material-symbols-outlined">
@@ -27,11 +44,27 @@ current: index
             </div>
         </section>
         <section class="d-flex justify-content-between align-items-center">
-            <select name="status" id="" class="maniAside__select">
+            <!-- <select name="status" id="" class="maniAside__select">
                 <option value="All" selected>All(4)</option>
                 <option value="replied">replied</option>
                 <option value="no reply">no reply</option>
-            </select>
+            </select> -->
+
+            <!-- 「All Courses」、「All(4)」可以嘗試使用下拉選單製作 -->
+            <!-- 使用下拉選單進行製作了話，如果遇到需要客製化的下拉選單，感覺會相當的方便 -->
+            <div class="dropdown">
+                <a class="dropdown-toggle maniAside__select fw-bold d-flex align-items-center" href="#" role="button"
+                    id="maniAside__select" data-bs-toggle="dropdown" aria-expanded="false">
+                    All(4)<span class="material-symbols-outlined ms-2 text-color-green">
+                        expand_more
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="maniAside__select">
+                    <li><a class="dropdown-item" href="#">All(4)</a></li>
+                    <li><a class="dropdown-item" href="#">replied</a></li>
+                    <li><a class="dropdown-item" href="#">no reply</a></li>
+                </ul>
+            </div>
             <span class="font-size-12 text-color-gray-600">2 comments</span>
         </section>
     </div>
@@ -39,7 +72,9 @@ current: index
 <main>
     <div class="container">
         <section class="d-flex">
-            <div class="maniAside me-3">
+            <!-- Assignment 左側列表可以使用 Bootstrap 的 List Group 元件 -->
+            <!-- 可以靈活搭配有邊框的卡片元件 -->
+            <!-- <div class="maniAside me-3">
                 <ul>
                     <li>
                         <a href="index.html" class="d-flex justify-content-between p-12 maniAside__link">
@@ -90,9 +125,68 @@ current: index
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
+
+            <!-- Assignment 左側列表可以使用 Bootstrap 的 List Group 元件 -->
+            <!-- 可以靈活搭配有邊框的卡片元件 -->
+            <ul class="list-group maniAside me-3">
+                <li class="list-group-item list-group-item-action rounded-0">
+                    <a href="index.html" class="d-flex justify-content-between border-color-grey-400">
+                        <div>
+                            <h3 class="font-size-12">Chapter Assignment 2</h3>
+                            <p class="fw-bold">Please check this file…</p>
+                        </div>
+                        <div class="text-end">
+                            <span class="font-size-12">4 hrs ago</span>
+                            <h4 class="font-size-12 text-color-gray-600">Emily Wang</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action rounded-0">
+                    <a href="index.html" class="d-flex justify-content-between border-color-grey-400">
+                        <div>
+                            <h3 class="font-size-12">Chapter Assignment 1</h3>
+                            <p class="fw-bold">My Homework</p>
+                        </div>
+                        <div class="text-end">
+                            <span class="font-size-12">12 hrs ago</span>
+                            <h4 class="font-size-12 text-color-gray-600">David Xu</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action rounded-0">
+                    <a href="index.html" class="d-flex justify-content-between border-color-grey-400">
+                        <div>
+                            <h3 class="font-size-12">Final Assignment</h3>
+                            <p class="fw-bold">Have a problem with this…</p>
+                        </div>
+                        <div class="text-end">
+                            <span class="font-size-12">18 hrs ago</span>
+                            <h4 class="font-size-12 text-color-gray-600">Tony Wei</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action rounded-0">
+                    <a href="index.html" class="d-flex justify-content-between border-color-grey-400">
+                        <div>
+                            <h3 class="font-size-12">Final Assignment</h3>
+                            <p class="fw-bold">Did I do it right?</p>
+                        </div>
+                        <div class="text-end">
+                            <span class="font-size-12">19 hrs ago</span>
+                            <h4 class="font-size-12 text-color-gray-600">Christina Lin</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+
+
             <div class="mainBlock">
-                <div class="border-gary-400">
+                <!-- <div class="border-gary-400">
                     <div class="d-flex justify-content-between bg-color-100 pyx-12-16 align-items-center">
                         <div>
                             <h3 class="font-size-12">Chapter Assignment 2 / HTML&CSS</h3>
@@ -172,7 +266,159 @@ current: index
                         </div>
                     </div>
 
-                    <div class="reply">
+                    <div class="reply d-none">
+                        <div
+                            class="d-flex align-items-center mainBlock__reply bg-color-100 border-b-gary-400 border-t-gary-400">
+                            <select name="bodyText" id="" class="mainBlock__reply__select bg-color-100 fw-bold me-24">
+                                <option value="Body Text" name="bodyText" disabled selected>Body Text</option>
+                                <option value="16px" name="bodyText">16px</option>
+                                <option value="24px" name="bodyText">24px</option>
+                                <option value="36px" name="bodyText">36px</option>
+                                <option value="48px" name="bodyText">48px</option>
+                            </select>
+                            <ul class="d-flex lh-1">
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            format_bold
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            format_italic
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            format_list_bulleted
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            format_list_numbered
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            image
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            link
+                                        </span></a></li>
+                                <li><a href="#" class="mainBlock__reply__function"><span
+                                            class="material-symbols-outlined">
+                                            code
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                        <form action="index.html" class="mainBlock__reply__form">
+                            <textarea name="reply" id="" class="mainBlock__reply__textarea"
+                                placeholder="Reply an answer…"></textarea>
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" class="mainBlock__reply__button__light">Cancel</button>
+                                <button type="submit" class="mainBlock__reply__button__dark">Reply</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="d-flex pt-3 justify-content-between align-items-center">
+                        <ul class="d-flex">
+                            <li class="me-24"><a href="#" class="mainBlock__menu__switch"><span
+                                        class="material-symbols-outlined">
+                                        keyboard_arrow_left
+                                    </span></a></li>
+                            <li><a href="#" class="mainBlock__menu__switch"><span class="material-symbols-outlined">
+                                        keyboard_arrow_right
+                                    </span></a></li>
+                        </ul>
+                        <ul class="d-flex">
+                            <li><a href="#" class="mainBlock__menu__edit-light">Mark as read</a></li>
+                            <li><a href="#" class="mainBlock__menu__edit-dark">Reply</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <!-- 右側內容可以使用 Bootstrap 的 Card 元件，按鈕可以使用 Button 元件 -->
+
+                <div class="card rounded-0">
+                    <div class="card-header d-flex justify-content-between bg-color-100 pyx-12-16 align-items-center">
+                        <div>
+                            <h3 class="font-size-12">Chapter Assignment 2 / HTML&CSS</h3>
+                            <p class="fw-bold">Please check this file for me, thanks!</p>
+                        </div>
+                        <a href="#" class="mainBlock__link fs-6"><span class="material-symbols-outlined">
+                                more_vert
+                            </span></a>
+                    </div>
+                    <ul class="card-body pb-0 pe-4_5">
+                        <li class="card-title d-flex align-items-center mb-3">
+                            <img src="./assets/images/emilywang.jpeg" alt="學員大頭貼-emilywang" class="mainBlock__img">
+                            <ul>
+                                <li>
+                                    <h4 class="fw-bolder">Emily Wang</h4>
+                                </li>
+                                <li class="font-size-12 text-color-gray-600">10:38 AM (4 hours ago)</li>
+                            </ul>
+                        </li>
+                        <!-- 程式碼片段可以使用 <code> 標籤包覆 請確保是用跳脫字元轉譯 HTML 尖括號 。 -->
+                        <li class="ms-5 pb-3 border-b-gary-400 mb-3">
+                            <p class="card-text font-size-14 mb-3">Hi Teacher, the attached file is my homework of
+                                chapter 2.
+                                And here comes a
+                                question: Why in the
+                                following
+                                code the height of the <!--<span class="mainBlock__highLight">--><code class="mainBlock__highLight">div</code><!--</span>--> is bigger than
+                                the height of the
+                                <!--<span class="mainBlock__highLight">--><code class="mainBlock__highLight">img</code><!--</span>--> ? There is
+                                a gap below the image, but it
+                                doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?
+                            </p>
+                            <a href="#" class="card-link mainBlock__file"><span class="material-symbols-outlined">
+                                    attach_file
+                                </span>HW-2-David.zip</a>
+                        </li>
+                    </ul>
+                    <ul class="card-body pb-0 pt-0 pe-4_5 answer">
+                        <li class="card-title d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/andychen.jpeg" alt="管理人員大頭照-Andychen" class="mainBlock__img">
+                                <ul>
+                                    <li>
+                                        <h4 class="fw-bolder">Andy Chen (You)</h4>
+                                    </li>
+                                    <li class="font-size-12 text-color-gray-600">13:24 AM (1 hours ago)</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex"><a href="#" class="mainBlock__link me-24"><span
+                                        class="material-symbols-outlined iconFill-0">
+                                        grade
+                                    </span></a>
+                                <a href="#" class="mainBlock__link"><span class="material-symbols-outlined">
+                                        edit
+                                    </span></a>
+                            </div>
+                        </li>
+                        <!-- 程式碼片段可以使用 <code> 標籤包覆 請確保是用跳脫字元轉譯 HTML 尖括號 。  -->
+                        <li class="ms-5">
+                            <p class="card-text font-size-14">Hi David, by default, an image is rendered inline, like a
+                                letter
+                                so it sits on the
+                                same line that a, b, c
+                                and d sit on. There is space below that line for the descenders you find on
+                                letters
+                                like g, j, p and q.
+                                <br><br> You can: <br><br>
+                            </p>
+                            <ul class="card-text font-size-14 list-style-disc mb-24">
+                                <li>adjust the <code class="mainBlock__highLight">vertical-align</code> of the
+                                    image
+                                    to position it
+                                    elsewhere (e.g.
+                                    the <code class="mainBlock__highLight">middle</code> ) or</li>
+                                <li>change the <code class="mainBlock__highLight">display</code> so it isn’t
+                                    inline.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="reply d-none">
                         <div
                             class="d-flex align-items-center mainBlock__reply bg-color-100 border-b-gary-400 border-t-gary-400">
                             <select name="bodyText" id="" class="mainBlock__reply__select bg-color-100 fw-bold me-24">

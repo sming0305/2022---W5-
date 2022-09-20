@@ -1,7 +1,7 @@
 // background
 
 .bg-color-100 {
-    background-color: $background-color-100;
+    background-color: $background-color-100 !important;
 }
 
 .bg-color-white {
@@ -28,6 +28,10 @@
 
 .p-4_5 {
     padding: 2rem;
+}
+
+.pe-4_5{
+    padding-right: 2rem;
 }
 
 .pb-24 {
@@ -107,7 +111,7 @@
 }
 
 .mb-24 {
-    margin-bottom: $space*12;
+    margin-bottom: $space*12 !important;
 }
 
 .mb-29 {
@@ -162,9 +166,13 @@
     color: $gary-600;
 }
 
-
+.lh-24_33{
+    line-height: 1.375;
+}
 
 // border
+
+
 
 .border-none {
     border: none;
@@ -172,6 +180,10 @@
 
 .border-danger {
     border: 1px solid $red;
+}
+
+.border-color-grey-400{
+    border-color: $gary-400;
 }
 
 .border-gary-400 {

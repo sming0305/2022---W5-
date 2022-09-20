@@ -14,16 +14,3 @@
     align-items: center;
 }
 
-
-
-@mixin linkHover {
-    color: $green;
-}
-
-@mixin linkFocus {
-    color: darken($green, 10%);
-}
-
-@mixin linkActive {
-    color: darken($green, 15%);
-}

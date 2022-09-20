@@ -24,11 +24,11 @@
     table a {
 
         &:hover {
-            @include linkHover
+            color: $green;
         }
 
         &:focus {
-            @include linkFocus
+            color: darken($green, 10%);
         }
     }
 
@@ -156,6 +156,7 @@
 
     &:hover {
         background-color: $green;
+        color: #000;
     }
 
     &:focus {

@@ -3,7 +3,6 @@
     margin: 0 auto;
 }
 
-
 .logo {
     @include imgReplaceText("../images/logo-ANSWER.svg");
     width: 143px;
@@ -17,7 +16,7 @@
 
     &:hover {
         border-left: 4px solid $green;
-        @include linkHover
+        color: $green;
     }
 
     &.active {

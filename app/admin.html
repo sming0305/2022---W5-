@@ -32,7 +32,7 @@ current: index
 <!-- mainList -->
 <section class="mainList">
     <div class="container">
-        <table class="table mb-63">
+        <table class="table table-hover  mb-63">
             <thead>
                 <tr>
                     <th class="fw-bold">ID<span class="material-symbols-outlined text-color-green font-size-12">
@@ -135,7 +135,9 @@ current: index
             </tbody>
         </table>
 
-        <div class="mainMiniMenu d-flex justify-content-end">
+        <!-- 分頁區塊也可嘗試用 Pagination 元件 -->
+
+        <!-- <div class="mainMiniMenu d-flex justify-content-end">
             <ul class="d-flex">
                 <li><a href="#" class="mainMiniMenu__link__switch"><span class="material-symbols-outlined">
                             chevron_left
@@ -147,7 +149,22 @@ current: index
                             navigate_next
                         </span></a></li>
             </ul>
-        </div>
+        </div> -->
+        <nav aria-label="Page navigation" class="d-flex justify-content-end">
+            <ul class="pagination">
+                <li class="page-item "><a class="page-link rounded-0 mainMiniMenu__link__switch" href="#"><span
+                            class="material-symbols-outlined" aria-hidden="true">
+                            chevron_left
+                        </span></a></li>
+                <li class="page-item"><a class="mainMiniMenu__link__page" href="#">1</a></li>
+                <li class="page-item"><a class="mainMiniMenu__link__page" href="#">2</a></li>
+                <li class="page-item"><a class="mainMiniMenu__link__page" href="#">3</a></li>
+                <li class="page-item"><a class="page-link rounded-0 mainMiniMenu__link__switch" href="#"><span
+                            class="material-symbols-outlined" aria-hidden="true">
+                            navigate_next
+                        </span></a></li>
+            </ul>
+        </nav>
     </div>
 </section>
 <!-- mainList end-->
@@ -263,11 +280,15 @@ current: index
                 <form action="index.html">
                     <h3 class="font-size-20  fw-bold mb-3">Account</h3>
                     <label for="name1" class="font-size-14">Name</label>
+                    <!-- 禁用的 input 可以使用 readonly 的屬性 -->
                     <input type="text" id="name1" name="name" required placeholder="Emir Wicks"
-                        class="form-control form-control-lg pyx-9-16 mb-3 border-0  placeholder-style bg-color-100">
+                        class="form-control form-control-lg pyx-9-16 mb-3 border-0  placeholder-style bg-color-100"
+                        readonly>
                     <label for="mail1" class="font-size-14">Email</label>
+                    <!-- 禁用的 input 可以使用 readonly 的屬性 -->
                     <input type="email" id="mail1" name="Email" required placeholder="emir.wicks@mail.com"
-                        class="form-control form-control-lg pyx-9-16 mb-24 border-0  placeholder-style bg-color-100">
+                        class="form-control form-control-lg pyx-9-16 mb-24 border-0  placeholder-style bg-color-100"
+                        readonly>
                     <h3 class="pt-24 border-t-gary-400 font-size-20 fw-bold mb-18">Verification</h3>
                     <div class="d-flex align-items-center justify-content-between mb-18">
                         <div class="d-flex align-items-center">
